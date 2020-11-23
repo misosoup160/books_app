@@ -9,3 +9,9 @@ ja:
     books: 書籍一覧
     editing book: 編集
     new book: 新規登録
+  notice:
+    create: 新規作成しました。
+    update: 編集しました。
+    destroy: 削除しました。
+  errors:
+    header: "%{model}の登録で%{count}件のエラーが発生しました"
