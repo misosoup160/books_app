@@ -13,5 +13,7 @@ ja:
     create: "%{model}情報を新規作成しました。"
     update: "%{model}情報を編集しました。"
     destroy: "%{model}情報を削除しました。"
+  confirm:
+    delete: 削除します。よろしいですか？
   errors:
     header: "%{model}の登録で%{count}件のエラーが発生しました"

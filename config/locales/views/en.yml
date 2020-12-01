@@ -3,3 +3,9 @@ en:
     create: "%{model} was successfully created."
     update: "%{model} was successfully updated."
     destroy: "%{model} was successfully destroyed."
+  confirm:
+    delete: Are you sure?
+  errors:
+    header: 
+      one: "%{count} error prohibited this %{model} from being saved:"
+      other: "%{count} errors prohibited this %{model} from being saved:"
