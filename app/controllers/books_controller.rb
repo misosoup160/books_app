@@ -19,7 +19,8 @@ class BooksController < ApplicationController
     @book = Book.new(book_params)
 
     if @book.save
-      redirect_to @book, notice: t('notice.create')
+      redirect_to @book
+      flash[:notice] = t 'notice.create', model: Book.model_name.human
     else
       render :new
     end
@@ -27,7 +28,8 @@ class BooksController < ApplicationController
 
   def update
     if @book.update(book_params)
-      redirect_to @book, notice: t('notice.update')
+      redirect_to @book
+      flash[:notice] = t 'notice.update', model: Book.model_name.human
     else
       render :edit
     end
@@ -35,7 +37,8 @@ class BooksController < ApplicationController
 
   def destroy
     @book.destroy
-    redirect_to books_url, notice: t('notice.destroy')
+    redirect_to books_url
+    flash[:notice] = t 'notice.destroy', model: Book.model_name.human
   end
 
   private
