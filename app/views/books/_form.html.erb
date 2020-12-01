@@ -11,24 +11,24 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="field form-group">
     <%= form.label :title %>
-    <%= form.text_field :title %>
+    <%= form.text_field :title, class: 'form-control' %>
   </div>
 
-  <div class="field">
+  <div class="field form-group">
     <%= form.label :memo %>
-    <%= form.text_area :memo %>
+    <%= form.text_area :memo, class: 'form-control' %>
   </div>
 
-  <div class="field">
+  <div class="field form-group">
     <%= form.label :author %>
-    <%= form.text_area :author %>
+    <%= form.text_area :author, class: 'form-control' %>
   </div>
 
-  <div class="field">
+  <div class="field form-group">
     <%= form.label :picture %>
-    <%= form.file_field :picture %>
+    <%= form.file_field :picture, class: 'form-control-file' %>
   </div>
 
   <div class="actions">
