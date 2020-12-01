@@ -1,6 +1,5 @@
 class BooksController < ApplicationController
   before_action :set_book, only: [:show, :edit, :update, :destroy]
-  before_action :set_locale
 
   def index
     @books = Book.all
@@ -46,13 +45,5 @@ class BooksController < ApplicationController
 
     def book_params
       params.require(:book).permit(:title, :memo, :author, :picture)
-    end
-
-    def set_locale
-      I18n.locale = params[:locale] || I18n.default_locale
-    end
-
-    def default_url_options(options={})
-      { locale:I18n.locale }.merge options
     end
 end
