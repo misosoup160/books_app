@@ -41,7 +41,6 @@ gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 gem 'bootstrap'
 gem 'carrierwave'
-gem 'kaminari'
 
 group :development do
   gem 'rubocop-fjord', require: false
